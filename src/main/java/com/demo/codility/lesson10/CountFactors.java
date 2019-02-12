@@ -13,10 +13,31 @@ public class CountFactors {
 
     public static void main(String[] args){
 
-        int result =  solution(2);
+        int result =  solution2(16);
         System.out.println("result: " + result);
     }
 
+
+    //92%
+    public static int solution2(int N){
+        int count = 0;
+        int candidate = 1;
+
+        while(candidate * candidate <= N){
+            if( N % candidate == 0 ){
+                if( candidate * candidate == N ) count = count + 1;
+                else count = count + 2;
+            }
+            candidate = candidate + 1;
+
+        }
+
+
+        return count;
+    }
+
+
+    //85%
     public static int solution(int N){
 
 
