@@ -9,16 +9,6 @@ public class MinMaxDivision {
     }
 
     private static int solution(int K, int M, int[] A) {
-
-        int pivot = A[A.length/2];
-
-        for(int i =0; i<A.length; i++){
-            if( pivot > A[i]){
-
-            }
-        }
-
-
         return 0;
 
     }
